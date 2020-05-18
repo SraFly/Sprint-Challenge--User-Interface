@@ -66,7 +66,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -84,7 +84,7 @@ p {
     padding-bottom: 20px;  
 }
 nav {
-    width: 800px;
+    width: 80rem;
     padding: 10px;
     margin: 0 auto;
     align-content: center;
@@ -93,7 +93,7 @@ nav {
     display: flex;
     padding: 3% 0 1% 0;
     justify-content: space-between;
-    vertical-align: bottom;
+    align-items: baseline;
     font-size: 3rem;
 }
 button {
@@ -108,7 +108,7 @@ img {
     padding-bottom: 3%;
 }
 .middle-content {
-    margin-bottom: 2.0rem;
+    margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
@@ -124,7 +124,7 @@ img {
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -197,13 +197,41 @@ footer nav a {
     text-decoration: none;
 }
 @media(max-width: 500px) {
-    header .header{
+    body {
+        width: 100%;
+    }
+    header .header {
         width: 80%;
         flex-wrap: wrap;
         flex-direction: column;
-        padding-bottom: 5%;
+        align-items: center;
+        padding: 5%;
     }
     img {
-        width: 80%;
+        width: 100%;
     }
+    .top-content .text-container {
+        margin: 1 auto;
+        padding: 5%;
+        width: 100%;
+    }
+    .middle-content h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .middle-content .boxes {
+        flex-direction: column;
+        align-content: center;
+    }
+    .bottom-content {
+        padding: 5%;
+        margin: 1 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    h2, h3 {
+        margin-bottom: 0;
+    }
+    
 }
