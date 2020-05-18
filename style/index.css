@@ -94,11 +94,14 @@ nav {
     padding: 3% 0 1% 0;
     justify-content: space-between;
     vertical-align: bottom;
+    font-size: 3rem;
 }
 button {
     background: none;
     border: none;
     text-align: match-parent;
+    font-size: 1.4rem;
+    padding-bottom: 1%;
 }
 img {
     width: 100%;
@@ -192,4 +195,15 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+@media(max-width: 500px) {
+    header .header{
+        width: 80%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+    img {
+        width: 80%;
+    }
 }
