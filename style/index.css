@@ -81,19 +81,29 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 2.0rem;  
+    padding-bottom: 20px;  
 }
 nav {
     width: 800px;
+    padding: 10px;
     margin: 0 auto;
+    align-content: center;
 }
 .header {
     display: flex;
-    padding: 0 1%;
+    padding: 3% 0 1% 0;
     justify-content: space-between;
     vertical-align: bottom;
 }
-
+button {
+    background: none;
+    border: none;
+    text-align: match-parent;
+}
+img {
+    width: 100%;
+    padding-bottom: 3%;
+}
 .middle-content {
     margin-bottom: 2.0rem;
     border-bottom: 1px dashed black;
